@@ -46,14 +46,14 @@
           <li class="drop-down"><a href="">스마트지킴이</a>
         
 			<ul>
-              <li class="drop-down"><a href="#">위치관련</a>
+              <li class="drop-down inner"><a href="#">위치관련</a>
                 <ul>
                   <li><a id="P1" href="#" onclick="guideClick(this, './tguard/P1.html')">위치가 들어오지 않습니다.<br/>위치의 오차가 심합니다.</a></li>
 				  <li><a id="P2" href="#" onclick="guideClick(this, './tguard/P2.html')">위치 수집 설정대로 위치가 들어오질 않습니다.</a></li>
                 </ul>
               </li>
 			  
-			  <li class="drop-down"><a href="#">앱 관련</a>
+			  <li class="drop-down inner"><a href="#">앱 관련</a>
                 <ul>
                   <li><a id="P3" href="#" onclick="guideClick(this, './tguard/P3.html')">안심존을 설정했지만 이탈/진입 알람이 오지 않습니다.</a></li>
                   <li><a id="P4" href="#" onclick="guideClick(this, './tguard/P4.html')">지도에서 새로고침을 눌렀지만 위치가 갱신되지 않습니다.</a></li>
@@ -68,7 +68,7 @@
                   <li><a id="P13" href="#" onclick="guideClick(this, './tguard/P10.html')">단말(착용자) 삭제를 어떻게 하나요?</a></li> 
                 </ul>
         </li>
-        <li class="drop-down"><a href="#">회원정보 관련</a>
+        <li class="drop-down inner"><a href="#">회원정보 관련</a>
           <ul>
             <li><a id="P14" href="#" onclick="guideClick(this, './tguard/P14.html')">아이디 또는 비밀번호를 잊어버렸습니다.</a></li>
             <li><a id="P15" href="#" onclick="guideClick(this, './tguard/P15.html')">회원가입을 시도했는데 '같은 사용자가 이미 존재합니다.' 라고 나옵니다.</a></li>
@@ -77,7 +77,7 @@
           </ul>
         </li>
 
-			  <li class="drop-down"><a href="#">단말관련</a>
+			  <li class="drop-down inner"><a href="#">단말관련</a>
                 <ul>
                   <li><a id="P18" href="#" onclick="guideClick(this, './tguard/P18.html')">단말기 충전이 안됩니다.</a></li>
 				          <li><a id="P19" href="#" onclick="guideClick(this, './tguard/P19.html')">SOS요청이 실패 합니다.</a></li>
@@ -188,17 +188,33 @@
   <script src="assets/js/main.js"></script>
   
   <script type="text/javascript">
-		var writeTemplatPre = "고객사: 스마트지킴이\r\n연락처: \r\n문의사항:";
-		var writeTemplatSub= "\r\n의뢰담당자: 모바일유통\r\n=========>";
-		
 		function guideClick(data, link){
 			var pNo = data.id+".html";
 			var pText = data.text;
-			
+      
+      var serviceName = serviceNameParse(data);
+      console.log(serviceName)
+
+      var writeTemplatPre = "고객사: " + serviceName + "\r\n연락처: \r\n문의사항:";
+		  var writeTemplatSub= "\r\n의뢰담당자: 모바일유통\r\n=========>";
+
 		  pText.replace(/(\n|\r\n)/g, '<br>');
       $("#memo").val(writeTemplatPre + pText + writeTemplatSub);
       $("#guaideContent").load(link);
 		}
+
+
+    function serviceNameParse(data) {
+      var serviceName = data.parentElement.parentElement.parentElement;
+     
+      if(serviceName.className == "drop-down inner"){
+        serviceName = serviceName.parentElement.parentElement;
+      }
+
+      return serviceName.getElementsByTagName("a")[0].text;
+    }
+    
+
 
     function refClick(link){
       $("#guaideContent").load(link);
