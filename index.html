@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BLUE VOC SERVICE GUIDE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">BLUE VOC SERVICE GUIDE</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+		
+          <li class="drop-down"><a href="">스마트지킴이</a>
+        
+			<ul>
+              <li class="drop-down"><a href="#">위치관련</a>
+                <ul>
+                  <li><a id="P1" href="#" onclick="guideClick(this, './tguard/P1.html')">위치가 들어오지 않습니다.<br/>위치의 오차가 심합니다.</a></li>
+				  <li><a id="P2" href="#" onclick="guideClick(this, './tguard/P2.html')">위치 수집 설정대로 위치가 들어오질 않습니다.</a></li>
+                </ul>
+              </li>
+			  
+			  <li class="drop-down"><a href="#">앱 관련</a>
+                <ul>
+                  <li><a id="P2" href="#" onclick="guideClick(this, './tguard/P2.html')">안심존을 설정했지만 이탈/진입 알람이 오지 않습니다.</a></li>
+                  <li><a href="#">지도에서 새로고침을 눌렀지만 위치가 갱신되지 않습니다.</a></li>
+                  <li><a href="#">(최초)단말을 등록했지만 지도에 위치가 하나도 없습니다.</a></li>
+                  <li><a href="#">단말의 블루투스를 켰지만 앱이 단말을 찾지 못합니다.<br>단말과 휴대전화의 연결 과정에서 앱이 연결 과정으로 들어가질 않습니다.</a></li>
+                  <li><a href="#">관리자를 추가 또는 초대 이후 초대된 관리자의 앱 지도에 위치가 하나도 없습니다.</a></li>
+                  <li><a href="#">관리자 초대를 보냈지만 문자가 오지 않습니다.<br>회원가입 또는 비밀번호 찾기에서 인증 문자가 오지 않습니다.<br>(푸시/상태 표시창)알람이 오지 않습니다.</a></li>
+                  <li><a href="#">관리자 초대 버튼을 눌러도 아무 반응이 없습니다.</a></li>
+                  <li><a href="#">관리자 추가 또는 삭제하고 싶습니다.</a></li> 
+                  <li><a href="#">단말을 새로 받고 등록하였는데 이미 마스터 관리자가 있습니다.</a></li>
+                  <li><a href="#">앱 사용방법이 궁금합니다.</a></li> 
+                  <li><a href="#">단말(착용자) 삭제를 어떻게 하나요?</a></li> 
+                </ul>
+        </li>
+        <li class="drop-down"><a href="#">회원정보 관련</a>
+          <ul>
+            <li><a href="#">아이디 또는 비밀번호를 잊어버렸습니다.</a></li>
+            <li><a href="#">회원가입을 시도했는데 '같은 사용자가 이미 존재합니다.' 라고 나옵니다.</a></li>
+            <li><a href="#">로그인 시 '등록된 사용자를 찾을 수 없습니다.' 라고 나옵니다.</a></li>
+            <li><a href="#">비밀번호 찾기를 시도했는데 '해당 사용자를 찾을 수 없습니다.' 라고 나옵니다.</a></li>
+          </ul>
+        </li>
+
+			  <li class="drop-down"><a href="#">단말관련</a>
+                <ul>
+                  <li><a href="#" onclick="wirteVoc()">단말기 충전이 안됩니다.</a></li>
+				          <li><a href="#">SOS요청이 실패 합니다.</a></li>
+				          <li><a href="#">단말의 블루투스를 어떻게 켜나요?</a></li>
+                  <li><a href="#">단말을 초기화하고 싶습니다.</a></li>
+                  <li><a href="#">단말 수령 후 휴대전화와의 연결은 어떻게하나요?</a></li>
+                  <li><a href="#">단말을 추가하려고 했더니 '등록된 단말이 아닙니다.'라는 메세지가 나옵니다.</a></li>
+                </ul>
+              </li>
+			  
+              <li><a href="./TguardUserGuide.pdf" target="_blank">사용설명서</a></li>
+              <li><a href="https://iotcare.sktiot.com/portal/login/login" target="_blank">스마트지킴이 Portal</a></li>
+            </ul>
+          </li>
+		  
+		  
+		  
+		  <li class="drop-down"><a href="">현대</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+		  <li class="drop-down"><a href="">DB</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+		  <li class="drop-down"><a href="">제강</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+		  <li class="drop-down"><a href="">기아</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a class="get-started-btn scrollto" onclick="magnifier()">
+		NotePad
+	  </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>무엇을 도와드릴까요?</h1>
+          <div class="d-lg-flex">
+			<textarea id="memo" class="form-control col-sx-5" rows="6"></textarea>
+		  </div>
+          <div class="d-lg-flex">
+			<a href="#" class="btn-get-started scrollto" onclick="copyIt()">클립보드</a>
+		  </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/homeimg.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= 활용템플2 드롭다운 문단 ======= -->
+    <div id ="guaideContent">
+        
+    </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>BluechipCNS</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <span style="color:#47b2e4;">IT Service Team</span>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+		
+    
+
+		var writeTemplatPre = "고객사: 스마트지킴이\r\n연락처: \r\n문의사항:";
+		var writeTemplatSub= "\r\n의뢰담당자: 모바일유통\r\n=========>";
+		
+		function guideClick(data, link){
+			var pNo = data.id+".html";
+			var pText = data.text;
+			
+			pText.replace(/(\n|\r\n)/g, '<br>');
+			// document.getElementById("memo").value= writeTemplatPre + pText + writeTemplatSub;
+			
+     $("#memo").val(writeTemplatPre + pText + writeTemplatSub);
+     $("#guaideContent").load(link);
+		}
+		
+		function showContent(){
+      
+		}
+		
+		function showTeam(){
+			
+		} 
+		
+		function testClear(){
+			var gArea = document.getElementById("guideArea");
+			var teamBox = document.getElementById("teamBox");
+			gArea.style.display = "none";
+			teamBox.style.display = "none";
+		}
+		
+		//유틸성
+		function copyIt() {
+			var obj = document.getElementById("memo");
+			obj.select(); //인풋 컨트롤의 내용 전체 선택
+			document.execCommand("copy"); //복사
+			obj.setSelectionRange(0, 0); //커서 위치 초기화
+			obj.value=""
+		}
+		function magnifier(){
+			var objShell = new ActiveXObject("WScript.Shell");
+			var runProgram = "notepad.exe ";
+			var retVal = objShell.run(runProgram, 1, true);
+		}
+
+
+		
+  </script>
+</body>
+
+</html>
