@@ -122,7 +122,7 @@
       </nav><!-- .nav-menu -->
 
       <a class="get-started-btn scrollto" onclick="magnifier()">
-      NotePad
+        NotePad
       </a>
 
     </div>
@@ -161,10 +161,10 @@
   <footer id="footer">
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>BluechipCNS</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Arsha.</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <span style="color:#47b2e4;">IT Service Team</span>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -186,10 +186,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
   <script type="text/javascript">
-		
-    
-
 		var writeTemplatPre = "고객사: 스마트지킴이\r\n연락처: \r\n문의사항:";
 		var writeTemplatSub= "\r\n의뢰담당자: 모바일유통\r\n=========>";
 		
@@ -197,29 +195,11 @@
 			var pNo = data.id+".html";
 			var pText = data.text;
 			
-			pText.replace(/(\n|\r\n)/g, '<br>');
-			// document.getElementById("memo").value= writeTemplatPre + pText + writeTemplatSub;
-			
-     $("#memo").val(writeTemplatPre + pText + writeTemplatSub);
-     $("#guaideContent").load(link);
+		  pText.replace(/(\n|\r\n)/g, '<br>');
+      $("#memo").val(writeTemplatPre + pText + writeTemplatSub);
+      $("#guaideContent").load(link);
 		}
-		
-		function showContent(){
-      
-		}
-		
-		function showTeam(){
-			
-		} 
-		
-		function testClear(){
-			var gArea = document.getElementById("guideArea");
-			var teamBox = document.getElementById("teamBox");
-			gArea.style.display = "none";
-			teamBox.style.display = "none";
-		}
-		
-		//유틸성
+
 		function copyIt() {
 			var obj = document.getElementById("memo");
 			obj.select(); //인풋 컨트롤의 내용 전체 선택
@@ -232,9 +212,6 @@
 			var runProgram = "notepad.exe ";
 			var retVal = objShell.run(runProgram, 1, true);
 		}
-
-
-		
   </script>
 </body>
 
